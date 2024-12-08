@@ -15,8 +15,19 @@ public class Main {
         totalSales = 12153.41;
         avgSales = totalSales / daysSales;
         System.out.printf("%nProduct № %d: %s," +
-                "%ntotal sales for %d days is %s %.2f," +
-                "%nsales by day is %s %.2f.%n",
+                        "%ntotal sales for %d days is %s %.2f," +
+                        "%nsales by day is %s %.2f.%n",
+                productNumber, product, daysSales, CURRENCY,
+                totalSales, CURRENCY, avgSales);
+
+        productNumber = 2;
+        product = "laptop";
+        daysSales = 7;
+        totalSales = 10486.85;
+        avgSales = totalSales / daysSales;
+        System.out.printf("%nProduct № %d: %s," +
+                        "%ntotal sales for %d days is %s %.2f," +
+                        "%nsales by day is %s %.2f.%n",
                 productNumber, product, daysSales, CURRENCY,
                 totalSales, CURRENCY, avgSales);
     }
